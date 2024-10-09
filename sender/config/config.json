@@ -1,0 +1,65 @@
+{
+    "id": "",
+    "startTimestamp": "",
+    "endTimestamp": "",
+    "span": false,
+    "accountId": "00001106",
+    "actorId": "100d4c41",
+    "actorAccountId": "00001106",
+    "actorType": "camera",
+    "creatorId": "een.gunDetectionAnalytics",
+    "type": "een.gunDetectionEvent.v1",
+    "dataSchemas": [
+      "een.objectDetection.v1",
+      "een.fullFrameImageUrl.v1"
+    ],
+    "data": [
+      {
+        "type": "een.objectDetection.v1",
+        "creatorId": "een.gunDetectionAnalytics",
+        "objectId": "camera-46743c2:d3275d08-16df-4176-b9c6-688046c858a2",
+        "timestamp": "2023-03-14T08:37:47.312Z",
+        "boundingBox": [
+          0.2,
+          0.9,
+          0.25,
+          0.95
+        ]
+      },
+      {
+        "type": "een.fullFrameImageUrl.v1",
+        "creatorId": "een.gunDetectionAnalytics",
+        "httpsUrl": "https://media.c001.eagleeyenetworks.com/assets/events/4333af21c0-4335312343521312213.jpeg",
+        "base64data": "",
+        "timestamp": ""
+      },
+      {
+        "type": "een.fullFrameImageUrl.v1",
+        "creatorId": "een.gunDetectionAnalytics",
+        "httpsUrl": "https://media.c001.eagleeyenetworks.com/assets/events/4333af21c0-4335312343521312213.jpeg",
+        "base64data": "",
+        "timestamp": ""
+      },
+      {
+        "type": "een.fullFrameImageUrl.v1",
+        "creatorId": "een.gunDetectionAnalytics",
+        "httpsUrl": "https://media.c001.eagleeyenetworks.com/assets/events/4333af21c0-4335312343521312213.jpeg",
+        "base64data": "",
+        "timestamp": ""
+      },
+      {
+        "type": "een.fullFrameImageUrl.v1",
+        "creatorId": "een.gunDetectionAnalytics",
+        "httpsUrl": "https://media.c001.eagleeyenetworks.com/assets/events/4333af21c0-4335312343521312213.jpeg",
+        "base64data": "",
+        "timestamp": ""
+      },
+      {
+        "type": "een.fullFrameImageUrl.v1",
+        "creatorId": "een.gunDetectionAnalytics",
+        "httpsUrl": "https://media.c001.eagleeyenetworks.com/assets/events/4333af21c0-4335312343521312213.jpeg",
+        "base64data": "",
+        "timestamp": ""
+      }
+    ]
+}
