@@ -22,7 +22,7 @@ const sendEvent = () => {
         configData.data[i].timestamp = currentTimestamp;
         configData.data[i].base64data = getImageBase64(imagesFolderPath);
     }
-
+  
     const jsonData = JSON.stringify(configData);
 
     const options = {
@@ -61,5 +61,5 @@ const sendEvent = () => {
 };
 
 setInterval(sendEvent, 15000);
- 
+
 module.exports = sendEvent;
