@@ -6,10 +6,7 @@ const  getImageBase64  = require('./Helper/imageHelper');
 const http = require('http');
 
 const imagesFolderPath = path.join(__dirname, 'Image');
-const configFilePath = path.join(__dirname, 'Config/config.json');
-
-console.log('Images Folder Path:', imagesFolderPath);
-console.log('Config File Path:', configFilePath);
+const configFilePath = path.join(__dirname, 'Config/configTemplate.json');
 
 const sendEvent = () => {
     const configData = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));
@@ -25,7 +22,7 @@ const sendEvent = () => {
         configData.data[i].timestamp = currentTimestamp;
         configData.data[i].base64data = getImageBase64(imagesFolderPath);
     }
-
+  
     const jsonData = JSON.stringify(configData);
 
     const options = {
