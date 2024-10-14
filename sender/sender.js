@@ -4,6 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 const  getTimestamps  = require('./Helper/timestampHelper');
 const  getImageBase64  = require('./Helper/imageHelper');
 const http = require('http');
+const  appCustomConfig  = require('./Config/config');
 
 const imagesFolderPath = path.join(__dirname, 'Image');
 const configFilePath = path.join(__dirname, 'Config/configTemplate.json');
@@ -24,10 +25,11 @@ const sendEvent = () => {
     }
   
     const jsonData = JSON.stringify(configData);
+    const url = new URL(appCustomConfig.ENDPOINT);
 
     const options = {
-        hostname: 'localhost',
-        port: 3001,
+        hostname: url.hostname,
+        port: url.port,
         path: '/hrsEvent',
         method: 'POST',
         headers: {
@@ -60,6 +62,6 @@ const sendEvent = () => {
     }
 };
 
-setInterval(sendEvent, 15000);
+setInterval(sendEvent, appCustomConfig.sendIntervalTime);
 
 module.exports = sendEvent;
