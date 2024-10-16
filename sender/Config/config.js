@@ -1,5 +1,5 @@
 const appCustomConfig ={
-    "ENDPOINT": "http://localhost:3001",
+    "ENDPOINT": "http://receiver:3002",
     "sendIntervalTime": 15000
 }
 
