@@ -10,6 +10,7 @@ services:
       - "3000:3000"
     volumes:
       - ./sender:/app
+      - /etc/localtime:/etc/localtime:ro
     depends_on:
       - receiver
 
@@ -21,3 +22,4 @@ services:
       - "3002:3002"
     volumes:
       - ./receiver:/app
+      - /etc/localtime:/etc/localtime:ro
