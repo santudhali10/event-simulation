@@ -1,9 +1,9 @@
 const moment = require('moment');
 
 function getTimestamps() {
-    const startTimestamp = moment().startOf('day').format('MMM DD, YYYY, h:mm:ss A');
-    const endTimestamp = moment().endOf('day').format('MMM DD, YYYY, h:mm:ss A');
-    const currentTimestamp = moment().format('MMM DD, YYYY, h:mm:ss A');
+    const startTimestamp = moment().startOf('day').format('YYYY-MM-DDTHH:mm:ss.SSSZ');
+    const endTimestamp = moment().endOf('day').format('YYYY-MM-DDTHH:mm:ss.SSSZ');
+    const currentTimestamp = moment().format('YYYY-MM-DDTHH:mm:ss.SSSZ');
 
     return {
         startTimestamp,
